@@ -20,3 +20,8 @@ const loginAction = () => {
     type: 'LOGIN'
   }
 };
+
+//
+//Write a callback function that increments the global variable count every time the store receives an action, and pass this function in to the store.subscribe() method.
+const add = () => (count ++);
+store.subscribe(add);
